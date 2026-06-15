@@ -1,9 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
     <head>
+        <title>Dhruv Nailwal | Software Developer & DSA Enthusiast</title>
+        <meta name="description" content="Dhruv Nailwal is a Computer Science student, DSA enthusiast, web developer, and competitive programmer. Explore projects, achievements, coding profiles, and experience.">
+        <meta name="keywords" content="Dhruv Nailwal, Dhruv Nailwal portfolio, Software Developer, DSA Enthusiast, Web Developer, LeetCode, GitHub">
+        <meta name="author" content="Dhruv Nailwal">
+        <meta name="robots" content="index, follow">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfolio of Dhruv Nailwal ΓÇö CS Student, Software Developer, Competitive Programmer">
+        <meta name="description" content="Portfolio of Dhruv Nailwal — CS Student, Software Developer, Competitive Programmer">
         <meta name="keywords" content="computer science, software engineer, developer, portfolio, competitive programming">
         <title>Dhruv Nailwal Portfolio</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -113,7 +118,24 @@ nav.scrolled{background:rgba(10,15,30,0.85);backdrop-filter:blur(20px);border-bo
 .btn-nav{background:linear-gradient(135deg,var(--cyan),var(--violet));border:none;border-radius:8px;padding:.45rem 1.1rem;cursor:pointer;color:#fff;font-size:.85rem;font-weight:600;font-family:'Inter',sans-serif;transition:opacity .2s}
 .btn-nav:hover{opacity:.85}
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;color:var(--text);font-size:1.4rem;padding:.25rem}
-.nav-mobile{display:none;position:fixed;inset:0;background:var(--bg);z-index:99;flex-direction:column;align-items:center;justify-content:center;gap:2rem}
+.nav-mobile{
+display:none;
+position:fixed;
+inset:0;
+background:var(--bg);
+z-index:1000;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:2rem;
+}
+#mobileClose{
+position:absolute;
+top:1.5rem;
+right:1.5rem;
+z-index:1001;
+cursor:pointer;
+}
 .nav-mobile.open{display:flex}
 .nav-mobile a{font-family:'Space Grotesk',sans-serif;font-size:1.5rem;font-weight:600;color:var(--text);text-decoration:none}
 @media(max-width:768px){.nav-links,.btn-nav{display:none}.nav-toggle{display:block}.nav-actions {gap:0}}
@@ -159,7 +181,29 @@ nav.scrolled{background:rgba(10,15,30,0.85);backdrop-filter:blur(20px);border-bo
 .t-red{background:#EF4444}.t-amber{background:#F59E0B}.t-green{background:#10B981}
 .terminal-line{color:var(--green)}
 .terminal-line span{color:var(--cyan)}
-@media(max-width:768px){.hero-avatar{display:none}}
+@media(max-width:768px){
+
+.hero-content{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.hero-avatar{
+display:flex !important;
+justify-content:center;
+margin:30px 0;
+order:-1;
+}
+
+.hero-avatar img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+}
+
+}
 
 /* ===== SECTIONS ===== */
 section{padding:5rem 2rem}
@@ -418,11 +462,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
             <div class="nav-actions">
                 <a href="#contact" class="btn-nav">Hire Me</a>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu">Γÿ░</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
         </nav>
         <!-- Mobile Nav -->
         <div class="nav-mobile" id="mobileNav">
-            <button id="mobileClose" style="position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer">Γ£ò</button>
+            <button id="mobileClose" style="position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;color:var(--text);font-size:1.5rem;cursor:pointer">✕</button>
             <a href="#about" class="mobile-link">About</a>
             <a href="#skills" class="mobile-link">Skills</a>
             <a href="#projects" class="mobile-link">Projects</a>
@@ -455,8 +499,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                     </p>
                     <div class="hero-btns">
                         <a href="#projects" class="btn-primary">Explore My Work</a>
-                        <a href="DhruvResume.pdf" class="btn-outline" download>≡ƒôä Download Resume</a>
-                        <a href="#contact" class="btn-outline">Γ£ë∩╕Å Contact Me</a>
+                        <a href="DhruvResume.pdf" class="btn-outline" download>📄 Download Resume</a>
+                        <a href="#contact" class="btn-outline">✉️ Contact Me</a>
                     </div>
                     <div class="hero-stats">
                         <div class="hero-stat">
@@ -483,7 +527,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                             <img src="Dhruv pp.jpg" alt="Dhruv Nailwal">
                         </div>
                     </div>
-                    <div class="hero-terminal">
+                    <!-- <div class="hero-terminal">
                         <div class="terminal-dots">
                             <div class="terminal-dot t-red"></div>
                             <div class="terminal-dot t-amber"></div>
@@ -491,12 +535,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         </div>
                         <div class="terminal-line">$ Dhruv Nailwal</div>
                         <div class="terminal-line">
-                            <span>ΓåÆ</span>
+                            <span>→</span>
                             Aspiring Software Engineer
                         </div>
                         <div class="terminal-line">$ Student</div>
-                        <!-- <div class="terminal-line"><span>ΓåÆ</span> open-to-work Γ£ô</div> -->
-                    </div>
+                        <div class="terminal-line"><span>→</span> open-to-work ✓</div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -517,19 +561,19 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         </div>
                         <div class="about-highlights">
                             <div class="about-hl">
-                                <div class="about-hl-icon">≡ƒÄô</div>
-                                <span>BS CS ┬╖ SGTB KHALSA COLLEGE (Delhi University) ┬╖ 2023ΓÇô2026 ┬╖ 8.1 CGPA</span>
+                                <div class="about-hl-icon">🎓</div>
+                                <span>BS CS · SGTB KHALSA COLLEGE (Delhi University) · 2023–2026 · 8.1 CGPA</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">≡ƒôì</div>
-                                <span>New Delhi, India ┬╖ Open to Remote & Relocation</span>
+                                <div class="about-hl-icon">📍</div>
+                                <span>New Delhi, India · Open to Remote & Relocation</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">≡ƒÆí</div>
-                                <span>Problem Solver ┬╖ Active on LeetCode & GeeksforGeeks</span>
+                                <div class="about-hl-icon">💡</div>
+                                <span>Problem Solver · Active on LeetCode & GeeksforGeeks</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">≡ƒö¡</div>
+                                <div class="about-hl-icon">🔭</div>
                                 <span>
                                     Currently Building
                                     <a href="https://compileacademy.tech/" style="color: cyan; text-decoration: none;">Compile Academy's</a>
@@ -538,7 +582,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                             </div>
                         </div>
                         <div class="currently-learning">
-                            <div class="cl-title">≡ƒöÑ Currently Learning</div>
+                            <div class="cl-title">🔥 Currently Learning</div>
                             <div class="cl-tags">
                                 <span class="tag">DSA</span>
                                 <span class="tag">nextjs</span>
@@ -550,27 +594,27 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                     </div>
                     <div class="about-values">
                         <div class="about-val">
-                            <div class="about-val-title">≡ƒÆí Solve Problems</div>
+                            <div class="about-val-title">💡 Solve Problems</div>
                             <div class="about-val-text">Approach challenges with logic, creativity, and persistence.</div>
                         </div>
                         <div class="about-val">
-                            <div class="about-val-title">≡ƒºá Master DSA</div>
+                            <div class="about-val-title">🧠 Master DSA</div>
                             <div class="about-val-text">Strengthen problem-solving skills through continuous practice.</div>
                         </div>
                         <div class="about-val">
-                            <div class="about-val-title">≡ƒÆ╗ Build Projects</div>
+                            <div class="about-val-title">💻 Build Projects</div>
                             <div class="about-val-text">Turn ideas into practical applications with real-world impact.</div>
                         </div>
                         <div class="about-val">
-                            <div class="about-val-title">≡ƒôÜ Keep Learning</div>
+                            <div class="about-val-title">📚 Keep Learning</div>
                             <div class="about-val-text">Stay curious and explore new technologies every day.</div>
                         </div>
                         <div class="about-val">
-                            <div class="about-val-title">≡ƒñ¥ Share Knowledge</div>
+                            <div class="about-val-title">🤝 Share Knowledge</div>
                             <div class="about-val-text">Teach, mentor, and help others grow in their tech journey.</div>
                         </div>
                         <div class="about-val">
-                            <div class="about-val-title">≡ƒÜÇ Grow Consistently</div>
+                            <div class="about-val-title">🚀 Grow Consistently</div>
                             <div class="about-val-text">Focus on steady improvement and lifelong learning.</div>
                         </div>
                     </div>
@@ -588,11 +632,11 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                 </div>
                 <div class="edu-timeline fade-in">
                     <div class="edu-item">
-                        <div class="edu-dot">≡ƒÄô</div>
+                        <div class="edu-dot">🎓</div>
                         <div class="edu-card">
                             <div class="edu-meta">
                                 <span class="edu-school">Sri Guru Tegh Bahadur Khalsa College</span>
-                                <span class="edu-duration">2023 ΓÇô 2026</span>
+                                <span class="edu-duration">2023 – 2026</span>
                             </div>
                             <div class="edu-degree">Bacheoler's in Science(Honors) Computer Science</div>
                             <div class="edu-grade">CGPA: 8.1 / 10</div>
@@ -608,13 +652,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         </div>
                     </div>
                     <div class="edu-item">
-                        <div class="edu-dot">≡ƒÅ½</div>
+                        <div class="edu-dot">🏫</div>
                         <div class="edu-card">
                             <div class="edu-meta">
                                 <span class="edu-school">Joseph Mary Public School, Delhi</span>
                                 <span class="edu-duration">2023</span>
                             </div>
-                            <div class="edu-degree">Class XII ΓÇö CBSE Science (PCM)</div>
+                            <div class="edu-degree">Class XII — CBSE Science (PCM)</div>
                             <div class="edu-grade">Percentage: 82.8%</div>
                             <div class="edu-courses">
                                 <span class="edu-course">Mathematics</span>
@@ -625,13 +669,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         </div>
                     </div>
                     <div class="edu-item">
-                        <div class="edu-dot">≡ƒôÜ</div>
+                        <div class="edu-dot">📚</div>
                         <div class="edu-card">
                             <div class="edu-meta">
                                 <span class="edu-school">Joseph Mary Public School, R.K. Puram</span>
                                 <span class="edu-duration">2021</span>
                             </div>
-                            <div class="edu-degree">Class X ΓÇö CBSE</div>
+                            <div class="edu-degree">Class X — CBSE</div>
                             <div class="edu-grade">Percentage: 88%</div>
                         </div>
                     </div>
@@ -650,7 +694,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                 <div class="skills-grid">
                     <div class="skill-cat fade-in">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">≡ƒÆ╗</div>Languages</div>
+                            <div class="skill-cat-icon">💻</div>Languages</div>
                         <div class="skill-items">
                             <div class="skill-item">
                                 <div class="skill-header">
@@ -681,7 +725,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                     </div>
                     <div class="skill-cat fade-in stagger-1">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">≡ƒîÉ</div>Web Development</div>
+                            <div class="skill-cat-icon">🌐</div>Web Development</div>
                         <div class="skill-items">
                             <div class="skill-item">
                                 <div class="skill-header">
@@ -702,7 +746,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                     </div>
                     <div class="skill-cat fade-in stagger-3">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">≡ƒ¢á∩╕Å</div>Tools</div>
+                            <div class="skill-cat-icon">🛠️</div>Tools</div>
                         <div class="skill-badges">
                             <span class="badge">Git / GitHub</span>
                             <span class="badge">Docker</span>
@@ -713,7 +757,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                     </div>
                     <div class="skill-cat fade-in stagger-1">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">≡ƒºá</div>CS Fundamentals</div>
+                            <div class="skill-cat-icon">🧠</div>CS Fundamentals</div>
                         <div class="skill-badges">
                             <span class="badge">Data Structures</span>
                             <span class="badge">Algorithms</span>
@@ -726,7 +770,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                     </div>
                     <div class="skill-cat fade-in stagger-2">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">≡ƒñû</div>AI / ML (Exploring)</div>
+                            <div class="skill-cat-icon">🤖</div>AI / ML (Exploring)</div>
                         <div class="skill-badges">
                             <span class="badge">NumPy / Pandas</span>
                             <span class="badge">scikit-learn</span>
@@ -752,13 +796,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(255,255,255,0.06);font-size:1.6rem">≡ƒÉÖ</div>
+                        <div class="profile-icon" style="background:rgba(255,255,255,0.06);font-size:1.6rem">🐙</div>
                         <div>
                             <div class="profile-name">GitHub</div>
                             <div class="profile-user">@dhruvnailwal</div>
                         </div>
                         <div class="profile-desc">Projects, contributions, and coding journey.</div>
-                        <div class="profile-btn">Visit Profile ΓåÆ</div>
+                        <div class="profile-btn">Visit Profile →</div>
                     </a>
                     <a
                         href="https://leetcode.com/u/Dhruv_Nailwal/"
@@ -766,13 +810,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(245,158,11,0.12);color:var(--amber);font-size:1.3rem">ΓÜí</div>
+                        <div class="profile-icon" style="background:rgba(245,158,11,0.12);color:var(--amber);font-size:1.3rem">⚡</div>
                         <div>
                             <div class="profile-name">LeetCode</div>
-                            <!-- <div class="profile-user">Guardian ┬╖ 2381</div> -->
+                            <!-- <div class="profile-user">Guardian · 2381</div> -->
                         </div>
                         <div class="profile-desc">500+ solved</div>
-                        <div class="profile-btn">Visit Profile ΓåÆ</div>
+                        <div class="profile-btn">Visit Profile →</div>
                     </a>
                     <a
                         href="https://www.hackerrank.com/profile/nailwaldhruv"
@@ -780,13 +824,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);color:var(--green);font-size:1.3rem">≡ƒÅà</div>
+                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);color:var(--green);font-size:1.3rem">🏅</div>
                         <div>
                             <div class="profile-name">HackerRank</div>
-                            <div class="profile-user">3Γÿà Problem Solving</div>
+                            <div class="profile-user">3★ Problem Solving</div>
                         </div>
                         <div class="profile-desc">Algorithms, Data Structures, CPP</div>
-                        <div class="profile-btn">Visit Profile ΓåÆ</div>
+                        <div class="profile-btn">Visit Profile →</div>
                     </a>
                     <a
                         href="https://www.linkedin.com/in/dhruvnailwal/"
@@ -794,13 +838,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(10,102,194,0.12);color:#0A66C2;font-size:1.3rem">≡ƒÆ╝</div>
+                        <div class="profile-icon" style="background:rgba(10,102,194,0.12);color:#0A66C2;font-size:1.3rem">💼</div>
                         <div>
                             <div class="profile-name">LinkedIn</div>
                             <div class="profile-user">/in/dhruvnailwal</div>
                         </div>
                         <div class="profile-desc">Professional journey and networking.</div>
-                        <div class="profile-btn">Visit Profile ΓåÆ</div>
+                        <div class="profile-btn">Visit Profile →</div>
                     </a>
                     <a
                         href="https://www.geeksforgeeks.org/profile/nailwalf3o0"
@@ -808,13 +852,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);font-size:1.3rem">≡ƒî▒</div>
+                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);font-size:1.3rem">🌱</div>
                         <div>
                             <div class="profile-name">GeeksForGeeks</div>
                             <div class="profile-user">Institute Rank #1</div>
                         </div>
-                        <div class="profile-desc">400+ coding scores ┬╖ Problem of the Day streak</div>
-                        <div class="profile-btn">Visit Profile ΓåÆ</div>
+                        <div class="profile-desc">400+ coding scores · Problem of the Day streak</div>
+                        <div class="profile-btn">Visit Profile →</div>
                     </a>
                 </div>
             </div>
@@ -844,13 +888,13 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/dhruvnailwal/compileAcademy" class="project-link">≡ƒôª GitHub</a>
-                                <a href="https://compileacademy.tech" class="project-link">≡ƒÜÇ Live Demo</a>
+                                <a href="https://github.com/dhruvnailwal/compileAcademy" class="project-link">📦 GitHub</a>
+                                <a href="https://compileacademy.tech" class="project-link">🚀 Live Demo</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card fade-in stagger-1">
-                        <div class="project-img">≡ƒñû</div>
+                        <div class="project-img">🤖</div>
                         <div class="project-body">
                             <div class="project-title">CodeReviewer AI</div>
                             <div class="project-desc">AI-powered code review tool that suggests improvements, detects bugs, and explains complexity. Built with LangChain and GPT-4. 500+ daily active users.</div>
@@ -862,15 +906,15 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                                 <span class="tech-tag">React</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">≡ƒôª GitHub</a>
-                                <a href="#" class="project-link">≡ƒÜÇ Live Demo</a>
+                                <a href="#" class="project-link">📦 GitHub</a>
+                                <a href="#" class="project-link">🚀 Live Demo</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card fade-in stagger-2">
-                        <div class="project-img">ΓÜÖ∩╕Å</div>
+                        <div class="project-img">⚙️</div>
                         <div class="project-body">
-                            <div class="project-title">MiniOS ΓÇö Custom OS Kernel</div>
+                            <div class="project-title">MiniOS — Custom OS Kernel</div>
                             <div class="project-desc">A minimal operating system kernel built from scratch in C++ and x86 assembly. Supports basic process scheduling, memory management, and a FAT32 filesystem.</div>
                             <div class="project-tech">
                                 <span class="tech-tag">C++</span>
@@ -879,15 +923,15 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                                 <span class="tech-tag">GDB</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">≡ƒôª GitHub</a>
+                                <a href="#" class="project-link">📦 GitHub</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card fade-in stagger-3">
-                        <div class="project-img">≡ƒÆ¼</div>
+                        <div class="project-img">💬</div>
                         <div class="project-body">
-                            <div class="project-title">Collab ΓÇö Real-time Code Editor</div>
-                            <div class="project-desc">Google Docs for code ΓÇö real-time collaborative code editor supporting 10+ languages, live chat, video calls, and execution sandbox. Used in 3 college hackathons.</div>
+                            <div class="project-title">Collab — Real-time Code Editor</div>
+                            <div class="project-desc">Google Docs for code — real-time collaborative code editor supporting 10+ languages, live chat, video calls, and execution sandbox. Used in 3 college hackathons.</div>
                             <div class="project-tech">
                                 <span class="tech-tag">React</span>
                                 <span class="tech-tag">Socket.io</span>
@@ -895,15 +939,15 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                                 <span class="tech-tag">Docker</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">≡ƒôª GitHub</a>
-                                <a href="#" class="project-link">≡ƒÜÇ Live Demo</a>
+                                <a href="#" class="project-link">📦 GitHub</a>
+                                <a href="#" class="project-link">🚀 Live Demo</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card fade-in stagger-1">
-                        <div class="project-img">≡ƒôè</div>
+                        <div class="project-img">📊</div>
                         <div class="project-body">
-                            <div class="project-title">StockSense ΓÇö ML Portfolio Tracker</div>
+                            <div class="project-title">StockSense — ML Portfolio Tracker</div>
                             <div class="project-desc">ML-powered stock analysis dashboard with LSTM price prediction, sentiment analysis from news, and portfolio optimization using modern portfolio theory.</div>
                             <div class="project-tech">
                                 <span class="tech-tag">Python</span>
@@ -912,14 +956,14 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                                 <span class="tech-tag">yfinance</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">≡ƒôª GitHub</a>
+                                <a href="#" class="project-link">📦 GitHub</a>
                             </div>
                         </div>
                     </div>
                     <div class="project-card fade-in stagger-2">
-                        <div class="project-img">≡ƒöù</div>
+                        <div class="project-img">🔗</div>
                         <div class="project-body">
-                            <div class="project-title">LinkVault ΓÇö URL Shortener</div>
+                            <div class="project-title">LinkVault — URL Shortener</div>
                             <div class="project-desc">Production-grade URL shortener with analytics dashboard, custom aliases, QR codes, click tracking, and link expiry. Handles 1M+ redirects/day.</div>
                             <div class="project-tech">
                                 <span class="tech-tag">Node.js</span>
@@ -928,8 +972,8 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                                 <span class="tech-tag">React</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="project-link">≡ƒôª GitHub</a>
-                                <a href="#" class="project-link">≡ƒÜÇ Live Demo</a>
+                                <a href="#" class="project-link">📦 GitHub</a>
+                                <a href="#" class="project-link">🚀 Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -954,9 +998,9 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                             <div class="exp-header">
                                 <div>
                                     <div class="exp-role">CMS Intern</div>
-                                    <div class="exp-org">Lawsforum ┬╖ Delhi</div>
+                                    <div class="exp-org">Lawsforum · Delhi</div>
                                 </div>
-                                <div class="exp-duration">November 2024 ΓÇô January 2025</div>
+                                <div class="exp-duration">November 2024 – January 2025</div>
                             </div>
                             <p class="exp-desc">Managed website content and published legal and educational blogs using the Content Management System. Assisted in organizing and updating digital resources while ensuring content quality and consistency.</p>
                             <div class="exp-tags">
@@ -975,10 +1019,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                             <div class="exp-header">
                                 <div>
                                     <div class="exp-role">Teaching Intern</div>
-                                    <div class="exp-org">Kilkari Project (CDF) ┬╖ Delhi</div>
+                                    <div class="exp-org">Kilkari Project (CDF) · Delhi</div>
                                 </div>
                                 <div class="exp-duration">
-                                    May 2025 ΓÇô July 2025
+                                    May 2025 – July 2025
                                 </div>
                             </div>
                             <p class="exp-desc">
@@ -1030,380 +1074,378 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:2.5rem 2
                         <span class="hero-stat-label">Certification</span>
                     </div>
                 </div>
-                <div class="achievements-grid">
-                    <div class="fade-in">
-                        <h3 style="font-family:'Space Grotesk',sans-serif;
+                <div class="fade-in">
+                    <h3 style="font-family:'Space Grotesk',sans-serif;
                         font-size:1.5rem;
                         margin-bottom:10px;
                         color:var(--text);">
-                            ≡ƒÅå Achievement Gallery
-                        </h3>
-                        <p style="color:var(--text2);margin-bottom:30px;">
-                            Coding competitions, certifications, and extracurricular milestones throughout my journey.
-                        </p>
-                    </div>
-                    <div class="projects-grid">
-                        <div class="ach-card" onclick="toggleAchievement('sgtb')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
-                            <div style="display:flex;gap:1rem;align-items:flex-start;">
-                                <div class="ach-icon">
-                                    ≡ƒÅ¢∩╕Å
+                        🏆 Achievement Gallery
+                    </h3>
+                    <p style="color:var(--text2);margin-bottom:30px;">
+                        Coding competitions, certifications, and extracurricular milestones throughout my journey.
+                    </p>
+                </div>
+                <div class="projects-grid">
+                    <div class="ach-card" onclick="toggleAchievement('sgtb')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
+                        <div style="display:flex;gap:1rem;align-items:flex-start;">
+                            <div class="ach-icon">
+                                🏛️
+                            </div>
+                            <div class="ach-content">
+                                <div class="ach-title">
+                                    SGTB Khalsa College
                                 </div>
-                                <div class="ach-content">
-                                    <div class="ach-title">
-                                        SGTB Khalsa College
-                                    </div>
-                                    <div class="ach-desc">
-                                        ≡ƒÅå 2 Coding Competitions
-                                        <br>
-                                        ≡ƒÑê 2 Runner Up Finishes
-                                    </div>
-                                    <div class="ach-badge blue">
-                                        Click to View Certificates Γû╝
-                                    </div>
+                                <div class="ach-desc">
+                                    🏆 2 Coding Competitions
+                                    <br>
+                                    🥈 2 Runner Up Finishes
+                                </div>
+                                <div class="ach-badge blue">
+                                    Click to View Certificates ▼
                                 </div>
                             </div>
-                            <div id="sgtb" style="display:none;margin-top:20px;">
-                                <hr style="border:1px solid rgba(255,255,255,.08);margin-bottom:20px;">
-                                <!-- Data Heist -->
-                                <div style="margin-bottom:25px;">
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÅå Data Heist
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Runner Up
-                                        <br>
-                                        ≡ƒôà 2026
-                                    </p>
-                                    <img src="DataHeist.jpeg" style="
+                        </div>
+                        <div id="sgtb" style="display:none;margin-top:20px;">
+                            <hr style="border:1px solid rgba(255,255,255,.08);margin-bottom:20px;">
+                            <!-- Data Heist -->
+                            <div style="margin-bottom:25px;">
+                                <h3 style="color:var(--cyan);">
+                                    🏆 Data Heist
+                                </h3>
+                                <p>
+                                    🥈 Runner Up
+                                    <br>
+                                    📅 2026
+                                </p>
+                                <img src="DataHeist.jpeg" style="
 width:100%;
 max-width:450px;
 border-radius:10px;
 margin-top:10px;
 ">
-                                </div>
-                                <hr style="border:1px solid rgba(255,255,255,.05);
+                            </div>
+                            <hr style="border:1px solid rgba(255,255,255,.05);
 margin-bottom:20px;">
-                                <!-- Output Battle -->
-                                <div>
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÅå Output Battle
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Runner Up
-                                        <br>
-                                        ≡ƒôà 2026
-                                    </p>
-                                    <img src="OutputBattle.jpeg" style="
+                            <!-- Output Battle -->
+                            <div>
+                                <h3 style="color:var(--cyan);">
+                                    🏆 Output Battle
+                                </h3>
+                                <p>
+                                    🥈 Runner Up
+                                    <br>
+                                    📅 2026
+                                </p>
+                                <img src="OutputBattle.jpeg" style="
 width:100%;
 max-width:450px;
 border-radius:10px;
 margin-top:10px;
 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ach-card" onclick="toggleAchievement('dept')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
+                        <div style="display:flex;gap:1rem;align-items:flex-start;">
+                            <div class="ach-icon">
+                                💻
+                            </div>
+                            <div class="ach-content">
+                                <div class="ach-title">
+                                    Department of Computer Science
+                                </div>
+                                <div class="ach-desc">
+                                    🏆 1 Coding Competition
+                                    <br>
+                                    🥈 Runner Up
+                                </div>
+                                <div class="ach-badge blue">
+                                    Click to View Certificates ▼
                                 </div>
                             </div>
                         </div>
-                        <div class="ach-card" onclick="toggleAchievement('dept')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
-                            <div style="display:flex;gap:1rem;align-items:flex-start;">
-                                <div class="ach-icon">
-                                    ≡ƒÆ╗
-                                </div>
-                                <div class="ach-content">
-                                    <div class="ach-title">
-                                        Department of Computer Science
-                                    </div>
-                                    <div class="ach-desc">
-                                        ≡ƒÅå 1 Coding Competition
-                                        <br>
-                                        ≡ƒÑê Runner Up
-                                    </div>
-                                    <div class="ach-badge blue">
-                                        Click to View Certificates Γû╝
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="dept" style="display:none;margin-top:20px;">
-                                <hr style="
+                        <div id="dept" style="display:none;margin-top:20px;">
+                            <hr style="
 border:1px solid rgba(255,255,255,.08);
 margin-bottom:20px;
 ">
-                                <div>
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÅå Squash the Bug
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Runner Up
-                                        <br>
-                                        ≡ƒôà 2026
-                                        <br>
-                                        ≡ƒÆ╗ Department of Computer Science
-                                    </p>
-                                    <img src="Squashthebug.jpeg" style="
+                            <div>
+                                <h3 style="color:var(--cyan);">
+                                    🏆 Squash the Bug
+                                </h3>
+                                <p>
+                                    🥈 Runner Up
+                                    <br>
+                                    📅 2026
+                                    <br>
+                                    💻 Department of Computer Science
+                                </p>
+                                <img src="Squashthebug.jpeg" style="
 width:100%;
 max-width:450px;
 border-radius:10px;
 margin-top:10px;
 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ach-card" onclick="toggleAchievement('deshbandhu')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
+                        <div style="display:flex;gap:1rem;align-items:flex-start;">
+                            <div class="ach-icon">
+                                🏛️
+                            </div>
+                            <div class="ach-content">
+                                <div class="ach-title">
+                                    Deshbandhu College
+                                </div>
+                                <div class="ach-desc">
+                                    🏆 1 Coding Competition
+                                    <br>
+                                    🥈 Runner Up
+                                </div>
+                                <div class="ach-badge blue">
+                                    Click to View Certificates ▼
                                 </div>
                             </div>
                         </div>
-                        <div class="ach-card" onclick="toggleAchievement('deshbandhu')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
-                            <div style="display:flex;gap:1rem;align-items:flex-start;">
-                                <div class="ach-icon">
-                                    ≡ƒÅ¢∩╕Å
-                                </div>
-                                <div class="ach-content">
-                                    <div class="ach-title">
-                                        Deshbandhu College
-                                    </div>
-                                    <div class="ach-desc">
-                                        ≡ƒÅå 1 Coding Competition
-                                        <br>
-                                        ≡ƒÑê Runner Up
-                                    </div>
-                                    <div class="ach-badge blue">
-                                        Click to View Certificates Γû╝
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="deshbandhu" style="display:none;margin-top:20px;">
-                                <hr style="
+                        <div id="deshbandhu" style="display:none;margin-top:20px;">
+                            <hr style="
 border:1px solid rgba(255,255,255,.08);
 margin-bottom:20px;
 ">
-                                <div>
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÅå Code Break
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Runner Up
-                                        <br>
-                                        ≡ƒôà 2025
-                                        <br>
-                                        ≡ƒÅ¢∩╕Å Deshbandhu College
-                                    </p>
-                                    <img src="CodeBreak.jpeg" style="
+                            <div>
+                                <h3 style="color:var(--cyan);">
+                                    🏆 Code Break
+                                </h3>
+                                <p>
+                                    🥈 Runner Up
+                                    <br>
+                                    📅 2025
+                                    <br>
+                                    🏛️ Deshbandhu College
+                                </p>
+                                <img src="CodeBreak.jpeg" style="
 width:100%;
 max-width:450px;
 border-radius:10px;
 margin-top:10px;
 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ach-card" onclick="toggleAchievement('sggscc')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
+                        <div style="display:flex;gap:1rem;align-items:flex-start;">
+                            <div class="ach-icon">
+                                🏛️
+                            </div>
+                            <div class="ach-content">
+                                <div class="ach-title">
+                                    Sri Guru Gobind Singh College of Commerce
+                                </div>
+                                <div class="ach-desc">
+                                    🏆 2 Coding Competitions
+                                    <br>
+                                    🥇 1 Winner
+                                    <br>
+                                    🥈 1 Runner Up
+                                </div>
+                                <div class="ach-badge gold">
+                                    Click to View Certificates ▼
                                 </div>
                             </div>
                         </div>
-                        <div class="ach-card" onclick="toggleAchievement('sggscc')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
-                            <div style="display:flex;gap:1rem;align-items:flex-start;">
-                                <div class="ach-icon">
-                                    ≡ƒÅ¢∩╕Å
-                                </div>
-                                <div class="ach-content">
-                                    <div class="ach-title">
-                                        Sri Guru Gobind Singh College of Commerce
-                                    </div>
-                                    <div class="ach-desc">
-                                        ≡ƒÅå 2 Coding Competitions
-                                        <br>
-                                        ≡ƒÑç 1 Winner
-                                        <br>
-                                        ≡ƒÑê 1 Runner Up
-                                    </div>
-                                    <div class="ach-badge gold">
-                                        Click to View Certificates Γû╝
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="sggscc" style="display:none;margin-top:20px;">
-                                <hr style="
+                        <div id="sggscc" style="display:none;margin-top:20px;">
+                            <hr style="
 border:1px solid rgba(255,255,255,.08);
 margin-bottom:20px;
 ">
-                                <!-- Auction Bytes -->
-                                <div style="margin-bottom:25px;">
-                                    <h3 style="
+                            <!-- Auction Bytes -->
+                            <div style="margin-bottom:25px;">
+                                <h3 style="
 color:#F59E0B;
 font-weight:700;
 ">
-                                        ≡ƒÑç Auction Bytes
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑç Winner
-                                        <br>
-                                        ≡ƒôà 2026
-                                        <br>
-                                        ≡ƒÅ¢∩╕Å SGGSCC
-                                    </p>
-                                    <img src="AuctionBytes.jpeg" style="
+                                    🥇 Auction Bytes
+                                </h3>
+                                <p>
+                                    🥇 Winner
+                                    <br>
+                                    📅 2026
+                                    <br>
+                                    🏛️ SGGSCC
+                                </p>
+                                <img src="AuctionBytes.jpeg" style="
 width:100%;
 max-width:450px;
 border-radius:10px;
 margin-top:10px;
 ">
-                                </div>
-                                <hr style="
+                            </div>
+                            <hr style="
 border:1px solid rgba(255,255,255,.05);
 margin-bottom:20px;
 ">
-                                <!-- Escape Room -->
-                                <div>
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÅå Escape Room
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Runner Up
-                                        <br>
-                                        ≡ƒôà 2026
-                                        <br>
-                                        ≡ƒÅ¢∩╕Å SGGSCC
-                                    </p>
-                                    <img src="EscapeRoom.jpeg" style="
+                            <!-- Escape Room -->
+                            <div>
+                                <h3 style="color:var(--cyan);">
+                                    🏆 Escape Room
+                                </h3>
+                                <p>
+                                    🥈 Runner Up
+                                    <br>
+                                    📅 2026
+                                    <br>
+                                    🏛️ SGGSCC
+                                </p>
+                                <img src="EscapeRoom.jpeg" style="
 width:100%;
 max-width:450px;
 border-radius:10px;
 margin-top:10px;
 ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ach-card" onclick="toggleAchievement('cdf')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
+                        <div style="display:flex;gap:1rem;align-items:flex-start;">
+                            <div class="ach-icon">
+                                📜
+                            </div>
+                            <div class="ach-content">
+                                <div class="ach-title">
+                                    Connecting Dream Foundation
+                                </div>
+                                <div class="ach-desc">
+                                    📚 Professional Certification
+                                    <br>
+                                    Python Training
+                                    <br>
+                                    ⏳ 90 Hours
+                                </div>
+                                <div class="ach-badge blue">
+                                    Click to View Certificate ▼
                                 </div>
                             </div>
                         </div>
-                        <div class="ach-card" onclick="toggleAchievement('cdf')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
-                            <div style="display:flex;gap:1rem;align-items:flex-start;">
-                                <div class="ach-icon">
-                                    ≡ƒô£
-                                </div>
-                                <div class="ach-content">
-                                    <div class="ach-title">
-                                        Connecting Dream Foundation
-                                    </div>
-                                    <div class="ach-desc">
-                                        ≡ƒôÜ Professional Certification
-                                        <br>
-                                        Python Training
-                                        <br>
-                                        ΓÅ│ 90 Hours
-                                    </div>
-                                    <div class="ach-badge blue">
-                                        Click to View Certificate Γû╝
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="cdf" style="display:none;margin-top:20px;">
-                                <hr style="
+                        <div id="cdf" style="display:none;margin-top:20px;">
+                            <hr style="
         border:1px solid rgba(255,255,255,.08);
         margin-bottom:20px;
         ">
-                                <div>
-                                    <h3 style="
+                            <div>
+                                <h3 style="
             color:var(--cyan);
             ">
-                                        ≡ƒô£ Python Training
-                                    </h3>
-                                    <p>
-                                        ≡ƒÅó Connecting Dream Foundation
-                                        <br>
-                                        Python Programming
-                                        <br>
-                                        ΓÅ│ 90 Hours
-                                    </p>
-                                    <img src="PythonCDF.jpeg" style="
+                                    📜 Python Training
+                                </h3>
+                                <p>
+                                    🏢 Connecting Dream Foundation
+                                    <br>
+                                    Python Programming
+                                    <br>
+                                    ⏳ 90 Hours
+                                </p>
+                                <img src="PythonCDF.jpeg" style="
             width:100%;
             max-width:450px;
             border-radius:10px;
             margin-top:10px;
             ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ach-card" onclick="toggleAchievement('eca')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
+                        <div style="display:flex;gap:1rem;align-items:flex-start;">
+                            <div class="ach-icon">
+                                🎭
+                            </div>
+                            <div class="ach-content">
+                                <div class="ach-title">
+                                    Extracurricular Achievements
+                                </div>
+                                <div class="ach-desc">
+                                    🏆 3 Achievements
+                                    <br>
+                                    🎤 Music
+                                    <br>
+                                    🎭 Cultural Activities
+                                    <br>
+                                    🥋 Martial Arts
+                                </div>
+                                <div class="ach-badge blue">
+                                    Click to View Certificates ▼
                                 </div>
                             </div>
                         </div>
-                        <div class="ach-card" onclick="toggleAchievement('eca')" style="cursor:pointer;flex-direction:column;align-items:stretch;">
-                            <div style="display:flex;gap:1rem;align-items:flex-start;">
-                                <div class="ach-icon">
-                                    ≡ƒÄ¡
-                                </div>
-                                <div class="ach-content">
-                                    <div class="ach-title">
-                                        Extracurricular Achievements
-                                    </div>
-                                    <div class="ach-desc">
-                                        ≡ƒÅå 3 Achievements
-                                        <br>
-                                        ≡ƒÄñ Music
-                                        <br>
-                                        ≡ƒÄ¡ Cultural Activities
-                                        <br>
-                                        ≡ƒÑï Martial Arts
-                                    </div>
-                                    <div class="ach-badge blue">
-                                        Click to View Certificates Γû╝
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="eca" style="display:none;margin-top:20px;">
-                                <hr style="
+                        <div id="eca" style="display:none;margin-top:20px;">
+                            <hr style="
         border:1px solid rgba(255,255,255,.08);
         margin-bottom:20px;
         ">
-                                <!-- Singing -->
-                                <div style="margin-bottom:25px;">
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÄñ Singing Competition
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Second Position
-                                        <br>
-                                        ≡ƒôà 2017
-                                        <br>
-                                        Directorate of NCT Delhi
-                                    </p>
-                                    <img src="Singing.jpeg" style="
+                            <!-- Singing -->
+                            <div style="margin-bottom:25px;">
+                                <h3 style="color:var(--cyan);">
+                                    🎤 Singing Competition
+                                </h3>
+                                <p>
+                                    🥈 Second Position
+                                    <br>
+                                    📅 2017
+                                    <br>
+                                    Directorate of NCT Delhi
+                                </p>
+                                <img src="Singing.jpeg" style="
             width:100%;
             max-width:450px;
             border-radius:10px;
             margin-top:10px;
             ">
-                                </div>
-                                <hr style="
+                            </div>
+                            <hr style="
         border:1px solid rgba(255,255,255,.05);
         margin-bottom:20px;
         ">
-                                <!-- Talent Hunt -->
-                                <div style="margin-bottom:25px;">
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÄ¡ Talent Hunt
-                                    </h3>
-                                    <p>
-                                        ≡ƒÑê Runner Up
-                                        <br>
-                                        ≡ƒôà 2025
-                                        <br>
-                                        Deshbandhu College
-                                    </p>
-                                    <img src="TalentHunt.jpeg" style="
+                            <!-- Talent Hunt -->
+                            <div style="margin-bottom:25px;">
+                                <h3 style="color:var(--cyan);">
+                                    🎭 Talent Hunt
+                                </h3>
+                                <p>
+                                    🥈 Runner Up
+                                    <br>
+                                    📅 2025
+                                    <br>
+                                    Deshbandhu College
+                                </p>
+                                <img src="TalentHunt.jpeg" style="
             width:100%;
             max-width:450px;
             border-radius:10px;
             margin-top:10px;
             ">
-                                </div>
-                                <hr style="
+                            </div>
+                            <hr style="
         border:1px solid rgba(255,255,255,.05);
         margin-bottom:20px;
         ">
-                                <!-- Karate -->
-                                <div>
-                                    <h3 style="color:var(--cyan);">
-                                        ≡ƒÑï Shotokan Karate
-                                    </h3>
-                                    <p>
-                                        ≡ƒÅà Participant
-                                        <br>
-                                        ≡ƒôà 2013
-                                        <br>
-                                        International Martial Arts Association
-                                    </p>
-                                    <img src="Karate.jpeg" style="
+                            <!-- Karate -->
+                            <div>
+                                <h3 style="color:var(--cyan);">
+                                    🥋 Shotokan Karate
+                                </h3>
+                                <p>
+                                    🏅 Participant
+                                    <br>
+                                    📅 2013
+                                    <br>
+                                    International Martial Arts Association
+                                </p>
+                                <img src="Karate.jpeg" style="
             width:100%;
             max-width:450px;
             border-radius:10px;
             margin-top:10px;
             ">
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -1421,27 +1463,27 @@ margin-top:10px;
                 </div>
                 <div class="facts-grid">
                     <div class="fact-card fade-in">
-                        <div class="fact-emoji">Γÿò</div>
+                        <div class="fact-emoji">☕</div>
                         <div class="fact-text">I've consumed roughly 4,380 cups of chai since college began. That's 4 per day, for 3 years.</div>
                     </div>
                     <div class="fact-card fade-in stagger-1">
-                        <div class="fact-emoji">≡ƒîÖ</div>
+                        <div class="fact-emoji">🌙</div>
                         <div class="fact-text">My most productive coding hours are between 11pm and 2am. Night owl is not a phase.</div>
                     </div>
                     <div class="fact-card fade-in stagger-2">
-                        <div class="fact-emoji">≡ƒôû</div>
+                        <div class="fact-emoji">📖</div>
                         <div class="fact-text">I've read "Designing Data-Intensive Applications" twice and still find new things each time.</div>
                     </div>
                     <div class="fact-card fade-in stagger-3">
-                        <div class="fact-emoji">≡ƒÄ«</div>
+                        <div class="fact-emoji">🎮</div>
                         <div class="fact-text">I can solve a Rubik's cube in under 30 seconds. Muscle memory is underrated as a concept.</div>
                     </div>
                     <div class="fact-card fade-in">
-                        <div class="fact-emoji">≡ƒÉ¢</div>
+                        <div class="fact-emoji">🐛</div>
                         <div class="fact-text">Once spent 6 hours debugging a bug that turned out to be a missing semicolon. Never again.</div>
                     </div>
                     <div class="fact-card fade-in stagger-1">
-                        <div class="fact-emoji">≡ƒù║∩╕Å</div>
+                        <div class="fact-emoji">🗺️</div>
                         <div class="fact-text">Visited 12 Indian states and aspire to work from a different country every year after graduation.</div>
                     </div>
                 </div>
@@ -1460,32 +1502,34 @@ margin-top:10px;
                     <div class="fade-left">
                         <div class="contact-info">
                             <div class="contact-item">
-                                <div class="contact-icon">Γ£ë∩╕Å</div>
+                                <div class="contact-icon">✉️</div>
                                 <div>
                                     <div class="contact-label">Email</div>
                                     <div class="contact-value">nailwaldhruv@gmail.com</div>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <div class="contact-icon">≡ƒô▒</div>
+                                <div class="contact-icon">📱</div>
                                 <div>
                                     <div class="contact-label">Phone</div>
                                     <div class="contact-value">+91 80760 25758</div>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <div class="contact-icon">≡ƒôì</div>
+                                <div class="contact-icon">📍</div>
                                 <div>
                                     <div class="contact-label">Location</div>
                                     <div class="contact-value">New Delhi, India</div>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <div class="contact-icon">≡ƒÆ╝</div>
+                                <div class="contact-icon">💼</div>
                                 <div>
                                     <div class="contact-label">Status</div>
-                                    <div class="contact-value" style="color:var(--green)">ΓùÅ Open to Work
-                                        <br> ΓùÅ Graduated from Bachelors in 2026
+                                    <div class="contact-value" style="color:var(--green)">
+                                        ● Open to Work
+                                        <br>
+                                        ● Graduated from Bachelors in 2026
                                     </div>
                                 </div>
                             </div>
@@ -1533,22 +1577,47 @@ margin-top:10px;
                             <div class="form-row">
                                 <div class="form-group">
                                     <label class="form-label">Name</label>
-                                    <input type="text" class="form-input" placeholder="Your name">
+                                    <input
+                                        type="text"
+                                        id="name"
+                                        class="form-input"
+                                        placeholder="Your name"
+                                    >
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Email</label>
-                                    <input type="email" class="form-input" placeholder="your@email.com">
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        class="form-input"
+                                        placeholder="your@email.com"
+                                    >
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Subject</label>
-                                <input type="text" class="form-input" placeholder="Internship opportunity / Freelance / Just saying hi">
+                                <input
+                                    type="text"
+                                    id="subject"
+                                    class="form-input"
+                                    placeholder="Internship opportunity / Freelance / Just saying hi"
+                                >
                             </div>
                             <div class="form-group">
                                 <label class="form-label">Message</label>
-                                <textarea class="form-input" rows="5" placeholder="Tell me about the opportunity or what you'd like to build together..."></textarea>
+                                <textarea
+                                    class="form-input"
+                                    id="message"
+                                    rows="5"
+                                    placeholder="Tell me about the opportunity or what you'd like to build together..."
+                                ></textarea>
                             </div>
-                            <button class="btn-primary" onclick="sendMsg()" style="width:100%;justify-content:center">≡ƒÜÇ Send Message</button>
+                            <button
+                                class="btn-primary"
+                                onclick="sendMsg()"
+                                style="width:100%;justify-content:center"
+                                id="sendBtn"
+                            >🚀 Send Message</button>
                             <div id="formMsg" style="font-size:.82rem;color:var(--green);text-align:center;height:1.2rem;transition:opacity .3s"></div>
                         </div>
                     </div>
@@ -1567,11 +1636,11 @@ margin-top:10px;
     </nav>
   </div> -->
             <div class="container">
-                <div class="footer-copy">Built with Γ¥ñ∩╕Å and lots of Γÿò by Dhruv Nailwal ┬╖ ┬⌐ 2026 ┬╖ All rights reserved</div>
+                <div class="footer-copy">Built with ❤️ and lots of ☕ by Dhruv Nailwal · © 2026 · All rights reserved</div>
             </div>
         </footer>
         <!-- Scroll To Top -->
-        <button id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">Γåæ</button>
+        <button id="scrolltop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
         <script>
 // ===== LOADER =====
 window.addEventListener('load', () => {
@@ -1603,10 +1672,26 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== MOBILE NAV =====
-const mobileNav = document.getElementById('mobileNav');
-document.getElementById('navToggle').addEventListener('click', () => mobileNav.classList.add('open'));
-document.getElementById('mobileClose').addEventListener('click', () => mobileNav.classList.remove('open'));
-document.querySelectorAll('.mobile-link').forEach(l => l.addEventListener('click', () => mobileNav.classList.remove('open')));
+const mobileNav = document.getElementById("mobileNav");
+const navToggle = document.getElementById("navToggle");
+const mobileClose = document.getElementById("mobileClose");
+
+navToggle.addEventListener("click", () => {
+    mobileNav.classList.add("open");
+    navToggle.style.display = "none";
+});
+
+mobileClose.addEventListener("click", () => {
+    mobileNav.classList.remove("open");
+    navToggle.style.display = "block";
+});
+
+document.querySelectorAll(".mobile-link").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileNav.classList.remove("open");
+        navToggle.style.display = "block";
+    });
+});
 
 // ===== TYPING ANIMATION =====
 const texts = ['Computer Science Student', 'Aspiring Software Developer', 'C/C++ Programmer', 'Open Source Contributor', 'Tech Enthusiast' ,'Problem Solver'];
@@ -1658,10 +1743,86 @@ document.querySelectorAll('section,#stats').forEach(s => obs.observe(s));
 
 // ===== CONTACT FORM =====
 function sendMsg() {
-  const msg = document.getElementById('formMsg');
-  msg.style.opacity = '1';
-  msg.textContent = 'Γ£ô Message sent! I will reply within 24 hours.';
-  setTimeout(() => msg.style.opacity = '0', 4000);
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
+
+if(!name || !email || !subject || !message){
+
+    const msg=document.getElementById("formMsg");
+
+    msg.style.opacity="1";
+
+    msg.textContent="⚠ Please fill all the fields.";
+
+    setTimeout(()=>{
+        msg.style.opacity="0";
+    },3000);
+
+    return;
+}
+
+    const btn = document.getElementById("sendBtn");
+
+    btn.disabled = true;
+
+    btn.innerHTML = "⏳ Sending...";
+
+    
+  emailjs.send(
+    "service_ii4fe1n",
+    "template_tcm6n6a",
+    {
+      name: name,
+      email: email,
+      subject: subject,
+      message: message
+    }
+  )
+
+  .then(function () {
+
+    const msg = document.getElementById('formMsg');
+
+    msg.style.opacity = '1';
+
+    msg.textContent = "✓ Message sent! I will reply within 24 hours.";
+
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+
+    setTimeout(() => {
+      msg.style.opacity = "0";
+    }, 4000);
+
+  })
+
+  .catch(function (error) {
+
+     const msg = document.getElementById("formMsg");
+
+    msg.style.opacity = "1";
+
+    msg.textContent = "❌ Failed to send message.";
+
+    btn.disabled = false;
+
+    btn.innerHTML = "🚀 Send Message";
+
+    console.log(error);
+
+    setTimeout(function(){
+
+        msg.style.opacity = "0";
+
+    },4000);
+
+  });
+
 }
         </script>
         <script>
@@ -1683,6 +1844,14 @@ x.style.display="none";
 }
 
 }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script>
+(function(){
+emailjs.init({
+publicKey: "hAeZxlM832RkKZMjG",
+});
+})();
         </script>
     </body>
 </html>
