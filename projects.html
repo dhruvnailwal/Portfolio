@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Projects | Dhruv Nailwal</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="64x64"
+            href="assets/favicon.png"
+        >
+        <meta name="theme-color" content="#0C1117">
+        <link rel="apple-touch-icon" href="assets/favicon.png">
+        <meta name="description" content="Projects by Dhruv Nailwal — Compile Academy, Catalyxt Nexus, MiniOS kernel, real-time code editor, ML stock tracker, and more. Plus his coding profiles on GitHub, LeetCode, and GeeksforGeeks.">
+        <meta name="keywords" content="Dhruv Nailwal projects, Web Development, Next.js, C++, Machine Learning, GitHub, LeetCode">
+        <meta name="author" content="Dhruv Nailwal">
+        <meta name="robots" content="index, follow">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="canonical" href="https://dhruvnailwal.me/projects.html">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <!-- Scroll Progress -->
+        <div id="progress" aria-hidden="true"></div>
+        <!-- Navigation -->
+        <nav id="navbar">
+            <a href="index.html" class="nav-logo">&lt;DN /&gt;</a>
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="projects.html" class="active">Projects</a>
+                </li>
+                <li>
+                    <a href="experience.html">Experience</a>
+                </li>
+                <li>
+                    <a href="achievements.html">Wins</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn-nav">Hire Me</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
+        </nav>
+        <!-- Mobile Nav -->
+        <div class="nav-mobile" id="mobileNav">
+            <a href="index.html" class="mobile-link">Home</a>
+            <a href="about.html" class="mobile-link">About</a>
+            <a href="projects.html" class="mobile-link active">Projects</a>
+            <a href="experience.html" class="mobile-link">Experience</a>
+            <a href="achievements.html" class="mobile-link">Wins</a>
+            <a href="contact.html" class="mobile-link">Contact</a>
+        </div>
+        <!-- PROJECTS -->
+        <section id="projects" class="page-head">
+            <div class="container">
+                <div class="fade-in">
+                    <span class="section-label">What I've Built</span>
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-desc">A collection of projects that showcase my problem-solving skills, creativity, and passion for software development.</p>
+                </div>
+                <div class="projects-grid" id="projectsGrid">
+                    <div class="project-card fade-in">
+                        <div class="project-img">
+                            <img src="logo.png" style="width:100%; height:100%; object-fit:cover;" alt="Compile Academy logo">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title">Compile Academy</div>
+                            <div class="project-desc">Designed and developed the official website for Compile Academy, providing students with an intuitive platform to explore courses, resources, and educational services. Focused on responsive design, user experience, and modern web development practices.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Next.js</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Tailwind CSS</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/dhruvnailwal/compileAcademy" class="project-link">📦 GitHub</a>
+                                <a href="https://compileacademy.tech" class="project-link">🚀 Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in stagger-1">
+                        <div class="project-img">
+                            <img src="cnlogo.jpeg" style="width:100%; height:100%; object-fit:cover;" alt="Catalyxt Nexus logo">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title">Catalyxt Nexus</div>
+                            <div class="project-desc">Built a social media marketing website for Catalyxt Nexus, focused on showcasing brand services, campaign strategy, and digital growth solutions. The platform is designed to communicate the company’s value clearly and help visitors connect with the brand online.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Website</span>
+                                <span class="tech-tag">Social Media Marketing</span>
+                                <span class="tech-tag">UI/UX</span>
+                                <span class="tech-tag">Responsive Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://catalyxtnexus.com" class="project-link" target="_blank" rel="noopener">🚀 Live Website</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="project-card fade-in stagger-2">
+                        <div class="project-img">⚙️</div>
+                        <div class="project-body">
+                            <div class="project-title">MiniOS — Custom OS Kernel</div>
+                            <div class="project-desc">A minimal operating system kernel built from scratch in C++ and x86 assembly. Supports basic process scheduling, memory management, and a FAT32 filesystem.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">x86 ASM</span>
+                                <span class="tech-tag">QEMU</span>
+                                <span class="tech-tag">GDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">📦 GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in stagger-3">
+                        <div class="project-img">💬</div>
+                        <div class="project-body">
+                            <div class="project-title">Collab — Real-time Code Editor</div>
+                            <div class="project-desc">Google Docs for code — real-time collaborative code editor supporting 10+ languages, live chat, video calls, and execution sandbox. Used in 3 college hackathons.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">📦 GitHub</a>
+                                <a href="#" class="project-link">🚀 Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in stagger-1">
+                        <div class="project-img">📊</div>
+                        <div class="project-body">
+                            <div class="project-title">StockSense — ML Portfolio Tracker</div>
+                            <div class="project-desc">ML-powered stock analysis dashboard with LSTM price prediction, sentiment analysis from news, and portfolio optimization using modern portfolio theory.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">yfinance</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">📦 GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in stagger-2">
+                        <div class="project-img">🔗</div>
+                        <div class="project-body">
+                            <div class="project-title">LinkVault — URL Shortener</div>
+                            <div class="project-desc">Production-grade URL shortener with analytics dashboard, custom aliases, QR codes, click tracking, and link expiry. Handles 1M+ redirects/day.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Redis</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">📦 GitHub</a>
+                                <a href="#" class="project-link">🚀 Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <!-- CODING PROFILES -->
+        <section id="profiles">
+            <div class="container">
+                <div class="fade-in">
+                    <span class="section-label">Online Presence</span>
+                    <h2 class="section-title">Online Profiles</h2>
+                    <p class="section-desc">Platforms where I build, learn, and connect with the tech community.</p>
+                </div>
+                <div class="profiles-grid">
+                    <a
+                        href="https://github.com/dhruvnailwal"
+                        class="profile-card fade-in"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="profile-icon" style="background:rgba(255,255,255,0.06);font-size:1.6rem">🐙</div>
+                        <div>
+                            <div class="profile-name">GitHub</div>
+                            <div class="profile-user">@dhruvnailwal</div>
+                        </div>
+                        <div class="profile-desc">Projects, contributions, and coding journey.</div>
+                        <div class="profile-btn">Visit Profile →</div>
+                    </a>
+                    <a
+                        href="https://leetcode.com/u/Dhruv_Nailwal/"
+                        class="profile-card fade-in stagger-2"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="profile-icon" style="background:rgba(232,163,61,0.12);color:var(--amber);font-size:1.3rem">⚡</div>
+                        <div>
+                            <div class="profile-name">LeetCode</div>
+                        </div>
+                        <div class="profile-desc">500+ solved</div>
+                        <div class="profile-btn">Visit Profile →</div>
+                    </a>
+                    <a
+                        href="https://www.hackerrank.com/profile/nailwaldhruv"
+                        class="profile-card fade-in"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);color:var(--green);font-size:1.3rem">🏅</div>
+                        <div>
+                            <div class="profile-name">HackerRank</div>
+                            <div class="profile-user">3★ Problem Solving</div>
+                        </div>
+                        <div class="profile-desc">Algorithms, Data Structures, CPP</div>
+                        <div class="profile-btn">Visit Profile →</div>
+                    </a>
+                    <a
+                        href="https://www.linkedin.com/in/dhruvnailwal/"
+                        class="profile-card fade-in stagger-1"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="profile-icon" style="background:rgba(10,102,194,0.12);color:#0A66C2;font-size:1.3rem">💼</div>
+                        <div>
+                            <div class="profile-name">LinkedIn</div>
+                            <div class="profile-user">/in/dhruvnailwal</div>
+                        </div>
+                        <div class="profile-desc">Professional journey and networking.</div>
+                        <div class="profile-btn">Visit Profile →</div>
+                    </a>
+                    <a
+                        href="https://www.geeksforgeeks.org/profile/nailwalf3o0"
+                        class="profile-card fade-in stagger-2"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);font-size:1.3rem">🌱</div>
+                        <div>
+                            <div class="profile-name">GeeksForGeeks</div>
+                            <div class="profile-user">Institute Rank #1</div>
+                        </div>
+                        <div class="profile-desc">400+ coding scores · Problem of the Day streak</div>
+                        <div class="profile-btn">Visit Profile →</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-copy">Built with ❤️ and lots of ☕ by Dhruv Nailwal · © 2026 · All rights reserved</div>
+            </div>
+        </footer>
+        <!-- Scroll To Top -->
+        <button id="scrolltop" onclick="toTop()" aria-label="Back to top">↑</button>
+        <script src="js/main.js"></script>
+    </body>
+</html>
