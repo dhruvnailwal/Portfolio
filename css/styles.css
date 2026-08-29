@@ -173,7 +173,7 @@ body.menu-open .nav-toggle { color: var(--accent-soft) }
 }
 
 /* ===== PAGE SCAFFOLD ===== */
-section { padding: 3.5rem 1.25rem; counter-increment: sec; scroll-margin-top: 4rem }
+section { padding: 3.5rem 1.25rem; scroll-margin-top: 4rem }
 .container { width: 100%; max-width: 1100px; margin: 0 auto }
 .page-head { padding-top: 5.75rem }
 .section-label {
@@ -182,7 +182,7 @@ section { padding: 3.5rem 1.25rem; counter-increment: sec; scroll-margin-top: 4r
   text-transform: uppercase; letter-spacing: .18em; color: var(--ink2); margin-bottom: .75rem;
 }
 .section-label::before { content: ''; width: 1.5rem; height: 1px; background: var(--accent) }
-.section-label::after { content: '/' counter(sec, decimal-leading-zero); color: var(--ink3); letter-spacing: .1em; margin-left: .25rem }
+
 .section-title {
   font-family: 'IBM Plex Sans', sans-serif; font-size: clamp(1.55rem, 5.5vw, 2.3rem);
   font-weight: 700; letter-spacing: -0.02em; color: var(--ink); margin-bottom: .85rem;
