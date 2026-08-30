@@ -19,14 +19,14 @@
         <link rel="canonical" href="https://dhruvnailwal.me/">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- Loader (home only) -->
         <div id="loader">
-            <div class="loader-logo">&lt;DN /&gt;</div>
+            <div class="loader-logo">&lt;<span class="hl">DN</span> /&gt;</div>
             <div class="loader-bar">
                 <div class="loader-fill"></div>
             </div>
@@ -35,8 +35,9 @@
         <div id="progress" aria-hidden="true"></div>
         <!-- Navigation -->
         <nav id="navbar">
-            <a href="index.html" class="nav-logo">&lt;DN /&gt;</a>
-            <ul class="nav-links">
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo">&lt;<span class="hl">DN</span> /&gt;</a>
+                <ul class="nav-links">
                 <li>
                     <a href="index.html" class="active">Home</a>
                 </li>
@@ -56,10 +57,11 @@
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn-nav">Hire Me</a>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-nav">Hire Me</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
         </nav>
         <!-- Mobile Nav -->
         <div class="nav-mobile" id="mobileNav">
@@ -82,7 +84,7 @@
                     <h1 class="hero-name">
                         Dhruv
                         <br>
-                        <span>Nailwal</span>
+                        <span class="accent">Nailwal</span>
                     </h1>
                     <p class="hero-tagline" id="typingText"></p>
                     <p class="hero-desc">
@@ -115,12 +117,15 @@
                     </div>
                 </div>
                 <figure class="hero-photo">
-                    <img
-                        src="assets/dhruv-portrait.jpg"
-                        alt="Portrait of Dhruv Nailwal"
-                        width="900"
-                        height="997"
-                    >
+                    <div class="frame">
+                        <img
+                            src="assets/dhruv-portrait.jpg"
+                            alt="Portrait of Dhruv Nailwal"
+                            width="900"
+                            height="997"
+                        >
+                        <span class="credit">28.61° N · 77.21° E</span>
+                    </div>
                     <figcaption class="hero-photo-caption">Dhruv Nailwal — New Delhi, IN</figcaption>
                 </figure>
             </div>
@@ -139,25 +144,25 @@
                         <div class="jump-card-kicker">01</div>
                         <div class="jump-card-title">About Me</div>
                         <div class="jump-card-desc">Who I am, what drives me, my education at Delhi University, and a few fun facts along the way.</div>
-                        <div class="jump-card-go">Read my story →</div>
+                        <div class="jump-card-go">Read my story <span class="go">→</span></div>
                     </a>
                     <a href="projects.html" class="jump-card fade-in stagger-1">
                         <div class="jump-card-kicker">02</div>
                         <div class="jump-card-title">Projects</div>
                         <div class="jump-card-desc">Web platforms, OS kernels, ML dashboards — plus the coding profiles where I practice daily.</div>
-                        <div class="jump-card-go">See my work →</div>
+                        <div class="jump-card-go">See my work <span class="go">→</span></div>
                     </a>
                     <a href="experience.html" class="jump-card fade-in stagger-2">
                         <div class="jump-card-kicker">03</div>
                         <div class="jump-card-title">Skills & Experience</div>
                         <div class="jump-card-desc">My technical toolkit and the internships where I've applied it in real-world environments.</div>
-                        <div class="jump-card-go">View my toolkit →</div>
+                        <div class="jump-card-go">View my toolkit <span class="go">→</span></div>
                     </a>
                     <a href="achievements.html" class="jump-card fade-in stagger-3">
                         <div class="jump-card-kicker">04</div>
                         <div class="jump-card-title">Achievements</div>
                         <div class="jump-card-desc">Coding competition wins and runner-up finishes across Delhi University, with certificates.</div>
-                        <div class="jump-card-go">See my wins →</div>
+                        <div class="jump-card-go">See my wins <span class="go">→</span></div>
                     </a>
                 </div>
             </div>

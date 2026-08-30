@@ -19,7 +19,7 @@
         <link rel="canonical" href="https://dhruvnailwal.me/experience.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -28,7 +28,8 @@
         <div id="progress" aria-hidden="true"></div>
         <!-- Navigation -->
         <nav id="navbar">
-            <a href="index.html" class="nav-logo">&lt;DN /&gt;</a>
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo">&lt;<span class="hl">DN</span> /&gt;</a>
             <ul class="nav-links">
                 <li>
                     <a href="index.html">Home</a>
@@ -49,10 +50,11 @@
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn-nav">Hire Me</a>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-nav">Hire Me</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
         </nav>
         <!-- Mobile Nav -->
         <div class="nav-mobile" id="mobileNav">
@@ -74,7 +76,7 @@
                 <div class="skills-grid">
                     <div class="skill-cat fade-in">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">💻</div>Languages</div>
+                            <div class="skill-cat-icon"><i class="fa-solid fa-code"></i></div>Languages</div>
                         <div class="skill-items">
                             <div class="skill-item">
                                 <div class="skill-header">
@@ -105,7 +107,7 @@
                     </div>
                     <div class="skill-cat fade-in stagger-1">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">🌐</div>Web Development</div>
+                            <div class="skill-cat-icon"><i class="fa-solid fa-globe"></i></div>Web Development</div>
                         <div class="skill-items">
                             <div class="skill-item">
                                 <div class="skill-header">
@@ -126,7 +128,7 @@
                     </div>
                     <div class="skill-cat fade-in stagger-3">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">🛠️</div>Tools</div>
+                            <div class="skill-cat-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>Tools</div>
                         <div class="skill-badges">
                             <span class="badge">Git / GitHub</span>
                             <span class="badge">Docker</span>
@@ -137,7 +139,7 @@
                     </div>
                     <div class="skill-cat fade-in stagger-1">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">🧠</div>CS Fundamentals</div>
+                            <div class="skill-cat-icon"><i class="fa-solid fa-brain"></i></div>CS Fundamentals</div>
                         <div class="skill-badges">
                             <span class="badge">Data Structures</span>
                             <span class="badge">Algorithms</span>
@@ -150,7 +152,7 @@
                     </div>
                     <div class="skill-cat fade-in stagger-2">
                         <div class="skill-cat-title">
-                            <div class="skill-cat-icon">🤖</div>AI / ML (Exploring)</div>
+                            <div class="skill-cat-icon"><i class="fa-solid fa-robot"></i></div>AI / ML (Exploring)</div>
                         <div class="skill-badges">
                             <span class="badge">NumPy / Pandas</span>
                             <span class="badge">scikit-learn</span>

@@ -19,7 +19,7 @@
         <link rel="canonical" href="https://dhruvnailwal.me/contact.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -28,7 +28,8 @@
         <div id="progress" aria-hidden="true"></div>
         <!-- Navigation -->
         <nav id="navbar">
-            <a href="index.html" class="nav-logo">&lt;DN /&gt;</a>
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo">&lt;<span class="hl">DN</span> /&gt;</a>
             <ul class="nav-links">
                 <li>
                     <a href="index.html">Home</a>
@@ -49,10 +50,11 @@
                     <a href="contact.html" class="active">Contact</a>
                 </li>
             </ul>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn-nav">Hire Me</a>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-nav">Hire Me</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
         </nav>
         <!-- Mobile Nav -->
         <div class="nav-mobile" id="mobileNav">
@@ -75,28 +77,28 @@
                     <div class="fade-left">
                         <div class="contact-info">
                             <div class="contact-item">
-                                <div class="contact-icon">✉️</div>
+                                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                                 <div>
                                     <div class="contact-label">Email</div>
                                     <div class="contact-value">nailwaldhruv@gmail.com</div>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <div class="contact-icon">📱</div>
+                                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
                                 <div>
                                     <div class="contact-label">Phone</div>
                                     <div class="contact-value">+91 80760 25758</div>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <div class="contact-icon">📍</div>
+                                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
                                 <div>
                                     <div class="contact-label">Location</div>
                                     <div class="contact-value">New Delhi, India</div>
                                 </div>
                             </div>
                             <div class="contact-item">
-                                <div class="contact-icon">💼</div>
+                                <div class="contact-icon"><i class="fa-solid fa-id-badge"></i></div>
                                 <div>
                                     <div class="contact-label">Status</div>
                                     <div class="contact-value" style="color:var(--green)">

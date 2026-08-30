@@ -19,7 +19,7 @@
         <link rel="canonical" href="https://dhruvnailwal.me/projects.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -28,7 +28,8 @@
         <div id="progress" aria-hidden="true"></div>
         <!-- Navigation -->
         <nav id="navbar">
-            <a href="index.html" class="nav-logo">&lt;DN /&gt;</a>
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo">&lt;<span class="hl">DN</span> /&gt;</a>
             <ul class="nav-links">
                 <li>
                     <a href="index.html">Home</a>
@@ -49,10 +50,11 @@
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn-nav">Hire Me</a>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-nav">Hire Me</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
         </nav>
         <!-- Mobile Nav -->
         <div class="nav-mobile" id="mobileNav">
@@ -87,8 +89,8 @@
                                 <span class="tech-tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com/dhruvnailwal/compileAcademy" class="project-link">📦 GitHub</a>
-                                <a href="https://compileacademy.tech" class="project-link">🚀 Live Demo</a>
+                                <a href="https://github.com/dhruvnailwal/compileAcademy" class="project-link"><i class="fa-brands fa-github"></i>GitHub</a>
+                                <a href="https://compileacademy.tech" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
                             </div>
                         </div>
                     </div>
@@ -106,7 +108,7 @@
                                 <span class="tech-tag">Responsive Design</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://catalyxtnexus.com" class="project-link" target="_blank" rel="noopener">🚀 Live Website</a>
+                                <a href="https://catalyxtnexus.com" class="project-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Website</a>
                             </div>
                         </div>
                     </div>
@@ -197,13 +199,15 @@
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(255,255,255,0.06);font-size:1.6rem">🐙</div>
-                        <div>
-                            <div class="profile-name">GitHub</div>
-                            <div class="profile-user">@dhruvnailwal</div>
+                        <div class="profile-head">
+                            <div class="profile-icon c-github"><i class="fa-brands fa-github"></i></div>
+                            <div>
+                                <div class="profile-name">GitHub</div>
+                                <div class="profile-user">@dhruvnailwal</div>
+                            </div>
                         </div>
                         <div class="profile-desc">Projects, contributions, and coding journey.</div>
-                        <div class="profile-btn">Visit Profile →</div>
+                        <div class="profile-btn">Visit Profile <span class="go">→</span></div>
                     </a>
                     <a
                         href="https://leetcode.com/u/Dhruv_Nailwal/"
@@ -211,12 +215,14 @@
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(232,163,61,0.12);color:var(--amber);font-size:1.3rem">⚡</div>
-                        <div>
-                            <div class="profile-name">LeetCode</div>
+                        <div class="profile-head">
+                            <div class="profile-icon c-leetcode"><i class="fa-solid fa-code"></i></div>
+                            <div>
+                                <div class="profile-name">LeetCode</div>
+                            </div>
                         </div>
                         <div class="profile-desc">500+ solved</div>
-                        <div class="profile-btn">Visit Profile →</div>
+                        <div class="profile-btn">Visit Profile <span class="go">→</span></div>
                     </a>
                     <a
                         href="https://www.hackerrank.com/profile/nailwaldhruv"
@@ -224,13 +230,15 @@
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);color:var(--green);font-size:1.3rem">🏅</div>
-                        <div>
-                            <div class="profile-name">HackerRank</div>
-                            <div class="profile-user">3★ Problem Solving</div>
+                        <div class="profile-head">
+                            <div class="profile-icon c-hackerrank"><i class="fa-brands fa-hackerrank"></i></div>
+                            <div>
+                                <div class="profile-name">HackerRank</div>
+                                <div class="profile-user">3★ Problem Solving</div>
+                            </div>
                         </div>
                         <div class="profile-desc">Algorithms, Data Structures, CPP</div>
-                        <div class="profile-btn">Visit Profile →</div>
+                        <div class="profile-btn">Visit Profile <span class="go">→</span></div>
                     </a>
                     <a
                         href="https://www.linkedin.com/in/dhruvnailwal/"
@@ -238,13 +246,15 @@
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(10,102,194,0.12);color:#0A66C2;font-size:1.3rem">💼</div>
-                        <div>
-                            <div class="profile-name">LinkedIn</div>
-                            <div class="profile-user">/in/dhruvnailwal</div>
+                        <div class="profile-head">
+                            <div class="profile-icon c-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div>
+                                <div class="profile-name">LinkedIn</div>
+                                <div class="profile-user">/in/dhruvnailwal</div>
+                            </div>
                         </div>
                         <div class="profile-desc">Professional journey and networking.</div>
-                        <div class="profile-btn">Visit Profile →</div>
+                        <div class="profile-btn">Visit Profile <span class="go">→</span></div>
                     </a>
                     <a
                         href="https://www.geeksforgeeks.org/profile/nailwalf3o0"
@@ -252,13 +262,15 @@
                         target="_blank"
                         rel="noopener"
                     >
-                        <div class="profile-icon" style="background:rgba(16,185,129,0.1);font-size:1.3rem">🌱</div>
-                        <div>
-                            <div class="profile-name">GeeksForGeeks</div>
-                            <div class="profile-user">Institute Rank #1</div>
+                        <div class="profile-head">
+                            <div class="profile-icon c-gfg"><i class="fa-solid fa-seedling"></i></div>
+                            <div>
+                                <div class="profile-name">GeeksForGeeks</div>
+                                <div class="profile-user">Institute Rank #1</div>
+                            </div>
                         </div>
                         <div class="profile-desc">400+ coding scores · Problem of the Day streak</div>
-                        <div class="profile-btn">Visit Profile →</div>
+                        <div class="profile-btn">Visit Profile <span class="go">→</span></div>
                     </a>
                 </div>
             </div>

@@ -19,7 +19,7 @@
         <link rel="canonical" href="https://dhruvnailwal.me/about.html">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -28,7 +28,8 @@
         <div id="progress" aria-hidden="true"></div>
         <!-- Navigation -->
         <nav id="navbar">
-            <a href="index.html" class="nav-logo">&lt;DN /&gt;</a>
+            <div class="nav-inner">
+                <a href="index.html" class="nav-logo">&lt;<span class="hl">DN</span> /&gt;</a>
             <ul class="nav-links">
                 <li>
                     <a href="index.html">Home</a>
@@ -49,10 +50,11 @@
                     <a href="contact.html">Contact</a>
                 </li>
             </ul>
-            <div class="nav-actions">
-                <a href="contact.html" class="btn-nav">Hire Me</a>
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn-nav">Hire Me</a>
+                </div>
+                <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
             </div>
-            <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mobileNav">☰</button>
         </nav>
         <!-- Mobile Nav -->
         <div class="nav-mobile" id="mobileNav">
@@ -87,32 +89,32 @@
                         </div>
                         <div class="about-highlights">
                             <div class="about-hl">
-                                <div class="about-hl-icon">🎓</div>
+                                <div class="about-hl-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                                 <span>MCA · DUCS, Delhi University · 2026–2028 · Pursuing</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">🎓</div>
+                                <div class="about-hl-icon"><i class="fa-solid fa-graduation-cap"></i></div>
                                 <span>BS CS · SGTB KHALSA COLLEGE (Delhi University) · 2023–2026 · 8.1 CGPA</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">📍</div>
+                                <div class="about-hl-icon"><i class="fa-solid fa-location-dot"></i></div>
                                 <span>New Delhi, India · Open to Remote & Relocation</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">💡</div>
+                                <div class="about-hl-icon"><i class="fa-solid fa-lightbulb"></i></div>
                                 <span>Problem Solver · Active on LeetCode & GeeksforGeeks</span>
                             </div>
                             <div class="about-hl">
-                                <div class="about-hl-icon">🔭</div>
+                                <div class="about-hl-icon"><i class="fa-solid fa-terminal"></i></div>
                                 <span>
                                     Currently Building
-                                    <a href="https://compileacademy.tech/" style="color: var(--accent); text-decoration: none;">Compile Academy's</a>
+                                    <a href="https://compileacademy.tech/">Compile Academy's</a>
                                     Website
                                 </span>
                             </div>
                         </div>
                         <div class="currently-learning">
-                            <div class="cl-title">🔥 Currently Learning</div>
+                            <div class="cl-title"><i class="fa-solid fa-fire"></i>&nbsp;Currently Learning</div>
                             <div class="cl-tags">
                                 <span class="tag">DSA</span>
                                 <span class="tag">nextjs</span>
@@ -125,27 +127,27 @@
                 </div>
                 <div class="about-values">
                     <div class="about-val fade-in">
-                        <div class="about-val-title">💡 Solve Problems</div>
+                        <div class="about-val-title"><i class="fa-solid fa-lightbulb"></i>Solve Problems</div>
                         <div class="about-val-text">Approach challenges with logic, creativity, and persistence.</div>
                     </div>
                     <div class="about-val fade-in stagger-1">
-                        <div class="about-val-title">🧠 Master DSA</div>
+                        <div class="about-val-title"><i class="fa-solid fa-brain"></i>Master DSA</div>
                         <div class="about-val-text">Strengthen problem-solving skills through continuous practice.</div>
                     </div>
                     <div class="about-val fade-in stagger-2">
-                        <div class="about-val-title">💻 Build Projects</div>
+                        <div class="about-val-title"><i class="fa-solid fa-code"></i>Build Projects</div>
                         <div class="about-val-text">Turn ideas into practical applications with real-world impact.</div>
                     </div>
                     <div class="about-val fade-in stagger-3">
-                        <div class="about-val-title">📚 Keep Learning</div>
+                        <div class="about-val-title"><i class="fa-solid fa-book-open"></i>Keep Learning</div>
                         <div class="about-val-text">Stay curious and explore new technologies every day.</div>
                     </div>
                     <div class="about-val fade-in">
-                        <div class="about-val-title">🤝 Share Knowledge</div>
+                        <div class="about-val-title"><i class="fa-solid fa-handshake"></i>Share Knowledge</div>
                         <div class="about-val-text">Teach, mentor, and help others grow in their tech journey.</div>
                     </div>
                     <div class="about-val fade-in stagger-1">
-                        <div class="about-val-title">🚀 Grow Consistently</div>
+                        <div class="about-val-title"><i class="fa-solid fa-arrow-trend-up"></i>Grow Consistently</div>
                         <div class="about-val-text">Focus on steady improvement and lifelong learning.</div>
                     </div>
                 </div>
@@ -162,7 +164,7 @@
                 </div>
                 <div class="edu-timeline fade-in">
                     <div class="edu-item current">
-                        <div class="edu-dot">🎓</div>
+                        <div class="edu-dot"><i class="fa-solid fa-graduation-cap"></i></div>
                         <div class="edu-card">
                             <div class="edu-meta">
                                 <span class="edu-school">Department of Computer Science, University of Delhi</span>
@@ -181,7 +183,7 @@
                         </div>
                     </div>
                     <div class="edu-item">
-                        <div class="edu-dot">💻</div>
+                        <div class="edu-dot"><i class="fa-solid fa-laptop-code"></i></div>
                         <div class="edu-card">
                             <div class="edu-meta">
                                 <span class="edu-school">Sri Guru Tegh Bahadur Khalsa College</span>
@@ -213,27 +215,27 @@
                 </div>
                 <div class="facts-grid">
                     <div class="fact-card fade-in">
-                        <div class="fact-emoji">☕</div>
+                        <div class="fact-emoji"><i class="fa-solid fa-mug-hot"></i></div>
                         <div class="fact-text">I've consumed roughly 4,380 cups of chai since college began. That's 4 per day, for 3 years.</div>
                     </div>
                     <div class="fact-card fade-in stagger-1">
-                        <div class="fact-emoji">🌙</div>
+                        <div class="fact-emoji"><i class="fa-solid fa-moon"></i></div>
                         <div class="fact-text">My most productive coding hours are between 11pm and 2am. Night owl is not a phase.</div>
                     </div>
                     <div class="fact-card fade-in stagger-2">
-                        <div class="fact-emoji">📖</div>
+                        <div class="fact-emoji"><i class="fa-solid fa-book"></i></div>
                         <div class="fact-text">I've read "Designing Data-Intensive Applications" twice and still find new things each time.</div>
                     </div>
                     <div class="fact-card fade-in stagger-3">
-                        <div class="fact-emoji">🎮</div>
+                        <div class="fact-emoji"><i class="fa-solid fa-cube"></i></div>
                         <div class="fact-text">I can solve a Rubik's cube in under 30 seconds. Muscle memory is underrated as a concept.</div>
                     </div>
                     <div class="fact-card fade-in">
-                        <div class="fact-emoji">🐛</div>
+                        <div class="fact-emoji"><i class="fa-solid fa-bug"></i></div>
                         <div class="fact-text">Once spent 6 hours debugging a bug that turned out to be a missing semicolon. Never again.</div>
                     </div>
                     <div class="fact-card fade-in stagger-1">
-                        <div class="fact-emoji">🗺️</div>
+                        <div class="fact-emoji"><i class="fa-solid fa-map-location-dot"></i></div>
                         <div class="fact-text">Visited 12 Indian states and aspire to work from a different country every year after graduation.</div>
                     </div>
                 </div>
