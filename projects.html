@@ -10,8 +10,8 @@
         >
         <meta name="theme-color" content="#0C1117">
         <link rel="apple-touch-icon" href="assets/favicon.png">
-        <meta name="description" content="Projects by Dhruv Nailwal — Compile Academy, Catalyxt Nexus, MiniOS kernel, real-time code editor, ML stock tracker, and more. Plus his coding profiles on GitHub, LeetCode, and GeeksforGeeks.">
-        <meta name="keywords" content="Dhruv Nailwal projects, Web Development, Next.js, C++, Machine Learning, GitHub, LeetCode">
+        <meta name="description" content="Projects by Dhruv Nailwal — TraceWeave multi-source AML detection engine, unseen-customer fraud detection, Compile Academy, Catalyxt Nexus, and more. Plus his coding profiles on GitHub, LeetCode, and GeeksforGeeks.">
+        <meta name="keywords" content="Dhruv Nailwal projects, Machine Learning, Anomaly Detection, AML, Fraud Detection, scikit-learn, PySide6, FastAPI, Streamlit, LightGBM, GitHub, LeetCode">
         <meta name="author" content="Dhruv Nailwal">
         <meta name="robots" content="index, follow">
         <meta charset="UTF-8">
@@ -74,6 +74,50 @@
                     <p class="section-desc">A collection of projects that showcase my problem-solving skills, creativity, and passion for software development.</p>
                 </div>
                 <div class="projects-grid" id="projectsGrid">
+                    <div class="project-card fade-in">
+                        <div class="project-img">
+                            <img src="fraud-detection.png" style="width:100%; height:100%; object-fit:cover;" alt="Unseen-Customer Fraud Detection — model performance on known vs unseen customers">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title">Unseen-Customer Fraud Detection</div>
+                            <div class="project-desc">A fraud risk engine built for the hardest case — the customer's first transaction. Fuses an isotonic-calibrated LightGBM fraud probability with an unsupervised IsolationForest + ECDF novelty score through a 2×2 risk matrix, so a legitimate new customer is never treated as fraud. Leakage-safe point-in-time features, TreeSHAP explanations, and a hard analyst alert budget, served over FastAPI and a Streamlit dashboard.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LightGBM</span>
+                                <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">IsolationForest</span>
+                                <span class="tech-tag">Isotonic Calibration</span>
+                                <span class="tech-tag">TreeSHAP</span>
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">Streamlit</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/dhruvnailwal/SRMHACK" class="project-link" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card fade-in stagger-1">
+                        <div class="project-img">
+                            <img src="traceweave.png" style="width:100%; height:100%; object-fit:cover;" alt="TraceWeave — multi-source anomaly detection engine architecture">
+                        </div>
+                        <div class="project-body">
+                            <div class="project-title">TraceWeave — Multi-Source AML Detection</div>
+                            <div class="project-desc">A source-agnostic anti-money-laundering triage engine. It reads messy bank, call-detail and social exports, infers what each column actually means, links the same person across all three sources, and ranks them by risk. Seven unsupervised model families — time correlation, OddBall network analysis, Isolation Forest, Benford's law, structuring, behavioural and chain detection — are fused by Borda count and gated by a sufficiency engine that never runs a detector the data cannot honestly support. Validated blind on the SAML-D benchmark and shipped as a PySide6 desktop app with SHA-256 chain-of-custody sealing.</div>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">scikit-learn</span>
+                                <span class="tech-tag">RapidFuzz</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">IsolationForest</span>
+                                <span class="tech-tag">Graph Analysis</span>
+                                <span class="tech-tag">PySide6</span>
+                                <span class="tech-tag">Pytest</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/dhruvnailwal/Hackathon" class="project-link" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="project-card fade-in">
                         <div class="project-img">
                             <img src="logo.png" style="width:100%; height:100%; object-fit:cover;" alt="Compile Academy logo">
